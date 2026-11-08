@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('beranda');
 });
 
-use App\Http\Controllers\MedicineController;
+use App\Http\Controllers\MenuController;
+Route::resource('menus', MenuController::class);
 
-Route::resource('medicines', MedicineController::class);
 
